@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <style>
+
+        :root{
+            --theme-color : #007dc0;
+            --theme-color-dark : #002b57;
+        }
+        *{
+            
+            font-family: Roboto;
+        }
+        body,h1,h2,h3,h4,h5,h6{
+            margin: 0px;
+        }
+       
+        header{
+            height: 70vh;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-image: url("https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+            background-size: cover;
+            /* background-size is used to fix the size of bg image */
+            background-position: bottom;
+            /* background-position is used to choose the bottom left top right which part you want to add in the webpage */
+        }
+        .header-content{
+            /* border: 2px solid blue; */
+            color: white;
+        }
+        .header-title{
+            font-size: 50px;
+        }
+        /* explore sero section */
+        .btn{
+            border: none;
+            padding: 10px 20px;
+            /* the first property is for top and bottom both and the second is for the left and right padding */
+            border-radius: 5px;
+        }
+        .btn-main{
+            background-color: var(--theme-color);
+            color: white;
+        }
+        .btn-outline{
+            background-color: white;
+            color: var(--theme-color);
+        }
+        section{
+            padding: 5% 10%;
+            text-align: center;
+        }
+
+        .section-title{
+            font-size: 40px;
+        }
+        .section-subtitle{
+            font-size: 20px;
+        }
+
+        .card-container{
+            display: flex;
+            /* by default it will set to row */
+            gap: 30px;
+            /* this put gap in card and we use gap property where we use flex */
+        }
+        .card{
+            /* border: 2px solid var(--theme-color-dark); */
+            text-align: center;
+            padding: 50px 30px;
+            border-radius: 10px;
+            color: var(--theme-color-dark);
+            transition-duration: 0.3s;
+        }
+        .card *{
+            /* .card space * will apply property every element inside card */
+            margin-bottom: 20px;
+        }
+
+        .card:hover{
+            /* uses to change propery when hover on the element */
+            color: white;
+            background-color: var(--theme-color-dark);
+            box-shadow: 2px 2px 5px #00000079;
+            transform: translateY(-10px);
+        }
+        .footer-div{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin: 0px 20px;
+            margin-bottom: 0px;
+        }
+        .company-div{
+            margin-left: 30px;
+            /* color: var(--theme-color-dark); */
+        }
+       img{
+        background-color: white;
+        width: 150px;
+        padding: 12px;
+        border: 10px solid var(--theme-color-dark);
+        border-radius: 100px;
+       }
+       .img-div{
+        background-color: var(--theme-color-dark);
+        /* border-radius: 210px; */
+       }
+       .footer-subtitle-div{
+        padding: 60px 100px;
+       }
+       /* .footer-subtitle-div *{
+        margin: 20px;
+       } */
+       
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+
+        <div class="header-content">
+            <h1 class="header-title">Welcome to Website</h1>
+            <p class="header-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad, fugiat laudantium nam corporis tempora aliquid consequuntur velit voluptatum odit.
+            </p>
+            <button class="btn btn-main">Get Started</button>
+            <button class="btn btn-outline">Explore</button>
+        </div>
+
+    </header>
+
+   <main>
+    <article>
+        <section class="section-features">
+            <h2 class="section-title">Our Features</h2>
+            <p class="section-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt similique asperiores alias natus corrupti pariatur!</p>
+            <div class="card-container">
+
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-6x"></i>
+                    <h3>Card Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est aut perspiciatis dolorem sed expedita reiciendis, ipsa sapiente blanditiis similique quasi, obcaecati eum tempore necessitatibus corporis. Adipisci laboriosam ex dolores dolore.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-6x"></i>
+                    <h3>Card Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est aut perspiciatis dolorem sed expedita reiciendis, ipsa sapiente blanditiis similique quasi, obcaecati eum tempore necessitatibus corporis. Adipisci laboriosam ex dolores dolore.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-6x"></i>
+                    <h3>Card Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est aut perspiciatis dolorem sed expedita reiciendis, ipsa sapiente blanditiis similique quasi, obcaecati eum tempore necessitatibus corporis. Adipisci laboriosam ex dolores dolore.</p>
+                </div>
+
+            </div>
+        </section>
+    </article>
+   </main>
+        <!--short form to the above 7 line are main>article>section  -->
+    <footer style="margin-bottom: 0; padding-bottom: 0; background-color: beige;" >
+        <div class="footer-div"  style="margin-bottom: 0; padding-bottom: 0;">
+            <div class="footer-subtitle-div" style="margin-left: 10px;margin-bottom: 0; ">
+                <h4 style="color: var(--theme-color); font-weight: bold;">Company Name</h4>
+                <p style="margin-bottom: 20px; font-size: 10px; color: #00000081;margin-top: 0px;">company some text here</p>
+                <h2 style="color: var(--theme-color-dark);">SHAH RUKH KHAN</h2>
+                <p style="margin-bottom: 20px; margin-top: 0px;font-size: 20px; color: #00000081;">Indian Actor</p>
+                <h4 style="color: var(--theme-color);">About yourself</h4>
+                <p style="font-size: 15px; color: #00000081; margin-top: 2px;">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Doloremque, ipsum? <br>Quisquam quos est officiis ex?</p>
+            </div>
+            <div class="img-div footer-subtitle-div" style="margin-bottom: 0px; margin-top: 0; background-color: var(--theme-color-dark);margin-bottom: 0;" >
+                <img src="sharukh.png" alt="shahrukhkhan" class="sharukh">
+            </div>
+            <div class="footer-subtitle-div" style="color: #00000081; margin-right: 0px; margin-bottom: 0;padding-right: 0; font-size: 17px; margin-left: 15px; align-content: left; float: right;">
+                <p style="text-align: right;" >00000000000 <br>00000000000</p>
+            
+                <p style="text-align: right;"> Mail Address <br>Web Address</p>
+                
+                <p style="text-align: right;">Street Address    </p>
+               
+
+            </div>
+            <div style="margin-left: 0; gap: 30px; margin-top: 0;margin-bottom: 0;">
+                <p><i class="fa-solid fa-phone-volume" style="color: var(--theme-color); padding: 8px;border: 2px solid var(--theme-color); border-radius: 50px; margin-bottom: 0px; margin-top: 3px;"></i></p>
+                <p><i class="fa-solid fa-envelope " style=" padding: 8px; color: var(--theme-color-dark); border: 2px solid var(--theme-color-dark); border-radius: 50px; "></i></p>
+                <p><i class="fa-solid fa-house" style=" color: var(--theme-color); padding: 8px;border: 2px solid var(--theme-color); border-radius: 50px;"></i></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!-- margin-bottom: 12px; margin-top: 10px;  margin-top: 10px; margin-top: 13px;-->
